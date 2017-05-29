@@ -50,16 +50,16 @@ public class BaseBrowserTst {
 			driver.get("https://en.wikipedia.org/wiki/Main_Page");
 
 			By searchInput = By.id("searchInput");
-			wait.until(
-					ExpectedConditions.presenceOfElementLocated(searchInput));
-			driver.findElement(searchInput).sendKeys("Software");
-
-			By searchButton = By.id("searchButton");
-			wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-			driver.findElement(searchButton).click();
-
-			wait.until(ExpectedConditions.textToBePresentInElementLocated(
-					By.tagName("body"), "Computer software"));
+//			wait.until(
+//					ExpectedConditions.presenceOfElementLocated(searchInput));
+//			driver.findElement(searchInput).sendKeys("Software");
+//
+//			By searchButton = By.id("searchButton");
+//			wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+//			driver.findElement(searchButton).click();
+//
+//			wait.until(ExpectedConditions.textToBePresentInElementLocated(
+//					By.tagName("body"), "Computer software"));
 		}
 	}
 
